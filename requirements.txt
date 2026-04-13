@@ -1,5 +1,6 @@
+-e ./dummy_opencv
 streamlit
 numpy
 deepface
 tf-keras
-opencv-python-headless
+opencv-python-headless==4.13.0.92
