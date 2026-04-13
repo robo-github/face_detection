@@ -2,6 +2,9 @@ import os
 
 def delete_folder():
     def delete_files_in_folder(folder_path):
+        if not os.path.exists(folder_path):
+            os.makedirs(folder_path, exist_ok=True)
+            return
         for filename in os.listdir(folder_path):
             file_path = os.path.join(folder_path, filename)
             try:
